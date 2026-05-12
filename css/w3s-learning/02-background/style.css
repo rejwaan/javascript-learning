@@ -1,0 +1,19 @@
+p {
+  /* background-color: burlywood; */
+  color: rgb(147, 146, 145);
+  font-size: 22px;
+  
+}
+
+/* background image */
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url(bg.jpg);
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
