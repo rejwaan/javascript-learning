@@ -1,6 +1,7 @@
 // practise with chatgpt
 console.log("Practise with chatgpt");
 
+// easy problem
 
 // problem 1
 // print Numbers from 1 to 10
@@ -85,7 +86,3 @@ for (let i = 1; i <= 10; i++) {
     let total = theFixNum * i;
     console.log(`${theFixNum} x ${i} = ${total}`);
 }
-
-
-// problem 9
-// print prime number from 1 to 100
