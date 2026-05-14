@@ -1,0 +1,19 @@
+div {
+    background-color: bisque;
+}
+.container {
+    height: 300px;
+    width: 50%;
+}
+
+/* min/max height and width */
+
+.container2 {
+    /* width: 600px; */
+    /* max-width: 600px; */
+    min-width: 600px;
+
+    /* height: 100px;
+    /* max-height: 300px; */
+    /* min-height: 100px; */
+}
