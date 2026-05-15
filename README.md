@@ -1,2 +1,2 @@
-# frontend-learning
-Frontend learning journey covering HTML, CSS, and JavaScript with daily practice, mini projects, and tutorials.
+# javascript-learning
+My JavaScript learning journey includes fundamentals, problem-solving practice, DOM manipulation, tutorial-based exercises, and mini projects.
