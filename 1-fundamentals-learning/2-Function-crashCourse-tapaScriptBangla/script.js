@@ -33,3 +33,62 @@ function count(x, ...y) {
 
 const done = count(1,2,3,4,5,6,7);
 console.log(done);
+
+
+// Arrow function
+
+const printthis = () =>{
+    console.log('printing');
+}
+printthis();
+
+// arrow function one line
+const printt = (a) => console.log(a); //valid
+printt(3);
+
+// more short
+const returnSomething = (a) => 2 * a;
+console.log(returnSomething(5));
+
+// this keyword (will be learn in future)
+console.log(this);
+
+
+// nested function
+// scope & closure
+
+function outer(x) {
+    console.log("Outer function");
+
+    function inner() {
+        console.log("Inner function");
+        return x * 5;
+    }
+    return inner();
+}
+
+const resul = outer(5);
+console.log(resul);
+
+
+// callback
+
+function foo(buz) {
+    const timeforbuz = true;
+    if(timeforbuz) {
+        buz();
+    }
+}
+
+// foo(function() {
+//     console.log("buz");
+// });
+
+// also write this way
+function buz() {
+    console.log("buz"); 
+}
+foo(buz);
+
+
+// higher order function
