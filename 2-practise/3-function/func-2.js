@@ -71,9 +71,34 @@ function ret(a,b) {
 console.log(ret(5, 3));
 
 
-// default parameters
+// 6 default parameters
 
 function doSome(a, b = 10) {  // function test(a = 5, b) {} not work
     return a + b;
 }
 console.log(doSome(5))
+
+
+// 7 Callback function (basic usage)
+function grety(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function done() {
+    console.log("Task completed");
+}
+grety("Rejo", done);
+
+// in-line callback
+function first(name, callBack) {
+    console.log("HI " + name);
+    callBack();
+}
+first("rejo", function() {
+    console.log("complete");
+});
+
+// 8 Higher-order function (basic idea)
+// 9 Function scope (local/global) done
+// Method (function inside object) done
