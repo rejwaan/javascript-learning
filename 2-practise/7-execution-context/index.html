@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execution Context</title>
+    <script defer src="test.js"></script>
+</head>
+
+<body>
+
+    <script>
+        // execution context
+        // call stack
+        function first() {
+            console.log("1");
+            second();
+        }
+
+        function second() {
+            console.log("2");
+            third();
+        }
+
+        function third() {
+            console.log("3");
+        }
+
+        first();
+
+
+        // example 2
+        function a() {
+            console.log("A");
+            b();
+            console.log("A শেষ");
+        }
+
+        function b() {
+            console.log("B");
+            c();
+            console.log("B শেষ");
+        }
+
+        function c() {
+            console.log("C");
+        }
+
+        a();
+        
+        // whats going here......
+        // output...
+        // 1. A
+        // 2. B
+        // 3. C
+        // 4. B শেষ
+        // 5. A শেষ
+
+    </script>
+</body>
+
+</html>
